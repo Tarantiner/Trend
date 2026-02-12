@@ -569,6 +569,10 @@ def send_to_telegram(
             "parse_mode": "HTML",
             "disable_web_page_preview": True,
         }
+        print('chat_id', chat_id)
+        print('url', url)
+        print('proxy', proxies)
+        print('data', payload)
 
         try:
             response = requests.post(
